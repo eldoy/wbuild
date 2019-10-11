@@ -1,14 +1,21 @@
 #!/usr/bin/env node
 const { execSync } = require('child_process')
+const path = require('path')
+
+const fpath = path.resolve(path.join(__dirname, '..'))
+console.log(fpath)
+process.chdir(fpath)
+
 function run () {
-  require('../lib/builder.js')()
+  require(fpath + '/lib/builder.js')()
 }
+
 try {
   run()
 } catch (e) {
   if (e.code === 'MODULE_NOT_FOUND') {
     console.log('Please wait, installing rollup...')
     execSync('npm i')
-    console.log('Done. Run "wbuild" to start building.')
+    console.log('Done. Run "wbuild" again to start building.')
   }
 }

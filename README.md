@@ -7,8 +7,12 @@ npm i -g wbuild
 ```
 
 ### Usage
-```javascript
-// Go to your app directory and run:
+```bash
+// Go to your app directory and install babel
+npm i -D @babel/preset-env @babel/plugin-transform-runtime
+npm i @babel/runtime
+
+// Build your library or application
 wbuild
 ```
 MIT licensed. Enjoy!
