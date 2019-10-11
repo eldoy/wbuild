@@ -3,11 +3,12 @@ Uses rollup and babel to build your code
 
 ### Install
 ```
-npm i wbuild
+npm i -g wbuild
 ```
 
 ### Usage
 ```javascript
-wbuild -s source -d destination
+// Go to your app directory and run:
+wbuild
 ```
 MIT licensed. Enjoy!
