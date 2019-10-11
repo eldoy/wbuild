@@ -1,7 +1,7 @@
 {
   "name": "wbuild",
-  "version": "0.1.0",
-  "description": "wbuild app builder",
+  "version": "0.1.1",
+  "description": "App builder and packager",
   "main": "index.js",
   "bin": {
     "wbuild": "./bin/wbuild.js"
@@ -11,6 +11,10 @@
     "clean": "rm -rf dist",
     "compile": "node bin/wbuild.js",
     "build": "npm run clean && npm run compile"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/fugroup/wbuild.git"
   },
   "author": "Vidar Eldøy",
   "license": "MIT",
