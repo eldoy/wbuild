@@ -1,6 +1,6 @@
 {
   "name": "wbuild",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "App builder and packager",
   "main": "index.js",
   "bin": {
