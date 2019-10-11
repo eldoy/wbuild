@@ -1,0 +1,31 @@
+{
+  "name": "wbuild",
+  "version": "0.1.0",
+  "description": "wbuild app builder",
+  "main": "index.js",
+  "bin": {
+    "wbuild": "./bin/wbuild.js"
+  },
+  "scripts": {
+    "test": "jest --watch",
+    "clean": "rm -rf dist",
+    "compile": "node bin/wbuild.js",
+    "build": "npm run clean && npm run compile"
+  },
+  "author": "Vidar Eldøy",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.6.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "jest": "^24.9.0",
+    "rollup": "^1.23.1",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-uglify-es": "0.0.1"
+  }
+}
