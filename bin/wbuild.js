@@ -9,6 +9,6 @@ try {
   if (e.code === 'MODULE_NOT_FOUND') {
     console.log('Please wait, installing rollup...')
     execSync('npm i')
-    run()
+    console.log('Done. Run "wbuild" to start building.')
   }
 }
